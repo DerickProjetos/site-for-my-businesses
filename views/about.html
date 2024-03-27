@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/hambbar.css">
+    <style>
+        .content
+        {
+            font-family: sans-serif;
+            margin: 1%;
+           
+        }
+        .content .title{
+
+            font-size: 40px;
+
+        }
+        .content div p{
+            font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        .content div p strong{
+            font-weight: 600;
+        }
+        .content div h2{
+            font-weight: 700;
+        }
+        .content div *{
+            
+          
+            margin-top: 3%;
+
+        }    
+        @media screen and (width < 700px){
+            .title{
+               
+                font-size: 10px;
+                
+            }
+
+        }
+        </style>
+    <title>SUPER QUICK RECIPES</title>
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/"><h2>SUPER QUICK RECIPES</h2></a>
+        <div class="navbarmenu">
+            <a href="contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+        </div>
+        <img class="hamb" src="images/hamb.png">
+    </header>
+    <header class="menu">
+            <a href="contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+    </header>
+    <section class="content">
+    
+        <h1 class="title">Welcome to Super Quick Recipes!</h1>
+            <div>
+                <p>
+                    At Super Quick Recipes, we're all about simplifying cooking and helping you create delicious meals in no time. Whether you're a busy professional, a student on the go, or just someone who loves good food without spending hours in the kitchen, we've got you covered.
+                </p>
+                <h2>Our Mission</h2>
+
+                <p>
+                    Our mission is simple: to provide you with easy-to-follow recipes that are both quick to make and full of flavor. We believe that cooking should be enjoyable, stress-free, and accessible to everyone, regardless of their level of expertise in the kitchen.
+                </p>
+                <h2>What We Offer</h2>
+
+                <p>
+                    On Super Quick Recipes, you'll find a wide range of recipes designed to save you time without sacrificing taste. From speedy breakfast ideas to satisfying dinners and everything in between, our collection of recipes caters to various dietary preferences and culinary preferences.
+                </p>
+                <h2>Our Approach</h2>
+
+                <p>
+                    <strong>Efficiency:</strong> We understand that time is precious, so we focus on recipes that require minimal prep and cooking time without compromising on taste.
+                </p>
+                <p>
+                    <strong>Variety:</strong> Our recipe collection includes options for every meal of the day and covers a diverse range of cuisines and ingredients.
+                </p>
+                <p>
+                    <strong>Informative Content:</strong> In addition to recipes, we provide helpful tips, cooking techniques, and ingredient substitutions to empower you in the kitchen.
+                </p>
+                <p>
+                    <strong>Community Engagement:</strong> Join our community of food enthusiasts, share your own quick recipes, and connect with others who share your passion for hassle-free cooking.
+                </p>
+                <h2>Meet Our Team</h2>
+
+                <p>
+                    Behind Super Quick Recipes is a team of food lovers and culinary enthusiasts who are dedicated to bringing you delicious recipes and culinary inspiration. Get to know the faces behind the recipes and learn more about our shared love for cooking and good food.
+                </p>
+                <h2>Get Cooking!</h2>
+
+                <p>
+                    Ready to whip up something delicious in a flash? Explore our collection of quick recipes, experiment with new flavors, and discover just how enjoyable cooking can be when you keep it super quick!
+                </p>
+                <p>
+                    Thank you for choosing Super Quick Recipes as your go-to resource for fast, flavorful meals. Happy cooking!
+                </p>
+             </div>
+
+
+    </section>
+    <script>
+        let hamb = document.querySelector(".hamb")
+        let menu = document.querySelector(".menu")
+        let IsActive = true
+        hamb.addEventListener("click", ()=>{
+            if(IsActive){
+                menu.style.left = "0%"
+                IsActive = false
+            }else{
+                menu.style.left = "-100%"
+                IsActive = true
+            }
+          
+        })
+    </script>
+</body>
+</html>

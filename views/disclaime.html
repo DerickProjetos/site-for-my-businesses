@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/hambbar.css">
+    <style>
+        .content
+        {
+            font-family: sans-serif;
+            margin: 1%;
+           
+        }
+        .content .title{
+
+            font-size: 40px;
+
+        }
+        .content div p{
+            font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        .content div p strong{
+            font-weight: 600;
+        }
+        .content div h2{
+            font-weight: 700;
+        }
+        .content div *{
+            
+          
+            margin-top: 3%;
+
+        }    
+        </style>
+    <title>SUPER QUICK RECIPES</title>
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/"><h2>SUPER QUICK RECIPES</h2></a>
+        <div class="navbarmenu">
+            <a href="contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+        </div>
+        <img class="hamb" src="images/hamb.png">
+    </header>
+    <header class="menu">
+            <a href="contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+    </header>
+    <section class="content">
+        <h1 class="title">Disclaimer</h1>
+        <div>
+            <p>
+                <strong>Last updated: 24/03/2024</strong>
+            </p>
+            <p>
+                The information provided by <strong>SUPER QUICK RECIPES</strong> ("we," "us," or "our") on <strong>SUPER QUICK RECIPES</strong> (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
+            </p>
+            <p>
+                Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.
+            </p>
+            <p>
+                The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us.
+            </p>
+            <p>
+                We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the site or any website or feature linked in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.
+            </p>
+            <p>
+                If you have any concerns regarding the content, accuracy, or reliability of any third-party websites linked through the site, please contact the third-party directly.
+            </p>
+            <p>
+                The Site is not intended to be a substitute for professional advice. Under no circumstance will we be liable for any loss or damage caused by your reliance on information obtained through the site. It is your responsibility to evaluate the accuracy, completeness, or usefulness of any information, opinion, advice, or other content available through the site.
+            </p>
+            <p>
+                <strong>By using the Site, you hereby consent to our disclaimer and agree to its terms.</strong>
+            </p>
+        </div>
+    </section>
+    <script>
+        let hamb = document.querySelector(".hamb")
+        let menu = document.querySelector(".menu")
+        let IsActive = true
+        hamb.addEventListener("click", ()=>{
+            if(IsActive){
+                menu.style.left = "0%"
+                IsActive = false
+            }else{
+                menu.style.left = "-100%"
+                IsActive = true
+            }
+          
+        })
+    </script>
+</body>
+</html>

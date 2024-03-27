@@ -1,0 +1,20 @@
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #561C24;
+    left: -100%;
+    font-family: sans-serif;
+   
+}
+.menu *{
+    color: white;
+    text-align: center;
+    padding: 5%;
+    
+
+}
+.menu a:first-child{
+    border-bottom: 2px solid #a19f9f9a;
+}

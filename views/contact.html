@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/hambbar.css">
+    <style>
+        .content
+        {
+            font-family: sans-serif;
+            margin: 1%;
+           
+        }
+        .content .title{
+
+            font-size: 40px;
+
+        }
+        .content div p{
+            font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        .content div p strong{
+            font-weight: 600;
+        }
+        .content div h2{
+            font-weight: 700;
+        }
+        .content div *{
+            
+          
+            margin-top: 3%;
+
+        }    
+        </style>
+    <title>SUPER QUICK RECIPES</title>
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/"><h2>SUPER QUICK RECIPES</h2></a>
+        <div class="navbarmenu">
+            <a href="contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+        </div>
+        <img class="hamb" src="images/hamb.png">
+    </header>
+    <header class="menu">
+            <a href="contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+    </header>
+    <section class="content">
+        <h1 class="title">Contact Us</h1>
+        <div>
+            <p>
+                Thank you for visiting Super Quick Recipes! Whether you have a question, feedback, or just want to say hello, we'd love to hear from you. Here are the best ways to get in touch:
+            </p>
+            <h2>General Inquiries</h2>
+            <p>
+                For general inquiries or assistance, please email us at contact@superquickrecipes.com. We strive to respond to all inquiries within 24-48 hours.
+            </p>
+            <h2>Recipe Requests</h2>
+            <p>
+                Have a specific recipe you'd like to see on Super Quick Recipes? Let us know! Send your recipe requests to recipes@superquickrecipes.com, and we'll do our best to feature it on our website.
+            </p>
+            <h2>Partnership Opportunities</h2>
+            <p>
+                Interested in collaborating with Super Quick Recipes? Whether you're a brand looking for sponsored content opportunities or a fellow food enthusiast with a recipe to share, we'd love to explore partnership opportunities with you. Please reach out to us at partnerships@superquickrecipes.com to discuss how we can work together.
+            </p>
+            <h2>Social Media</h2>
+            <p>
+                Connect with us on social media for the latest recipe updates, cooking tips, and behind-the-scenes content:
+            </p>
+            <a href="https://www.facebook.com/derick.pessoa.359/">
+                <img src="images/facebook.png">
+            </a>
+            <a href="https://wa.me/5521965222111">
+                <img src="images/whatsapp.png">
+            </a>
+            <a href="https://www.instagram.com/mondongo_103/">
+                <img src="images/instagram (1).png">
+            </a>
+            <p>
+                We value your feedback and are always looking for ways to improve. If you have any suggestions, comments, or ideas for how we can enhance your experience on Super Quick Recipes, please don't hesitate to share them with us at <a href="mailto:derick1490@gmail.com">derick1490@gmail.com</a>
+            </p>
+        </div>
+        
+
+    </section>
+    <script>
+        let hamb = document.querySelector(".hamb")
+        let menu = document.querySelector(".menu")
+        let IsActive = true
+        hamb.addEventListener("click", ()=>{
+            if(IsActive){
+                menu.style.left = "0%"
+                IsActive = false
+            }else{
+                menu.style.left = "-100%"
+                IsActive = true
+            }
+          
+        })
+    </script>
+</body>
+</html>
